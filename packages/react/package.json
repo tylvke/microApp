@@ -1,6 +1,6 @@
 {
   "name": "micro_react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "tvlvke",
   "private": true,
@@ -116,7 +116,7 @@
     "sass-resources-loader": "^2.0.1",
     "shelljs": "^0.8.3",
     "single-spa": "^4.4.2",
-    "single-spa-filelist-webpack-plugin": "^1.0.1",
+    "single-spa-filelist-webpack-plugin": "^1.0.2",
     "styled-components": "^4.3.2",
     "transform-runtime": "^0.0.0",
     "ts-loader": "^5.3.0",

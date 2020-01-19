@@ -1,6 +1,6 @@
 {
   "name": "single-spa-filelist-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "single-spa-filelist-webpack-plugin",
   "main": "index.js",
   "scripts": {
