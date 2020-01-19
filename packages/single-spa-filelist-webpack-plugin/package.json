@@ -1,0 +1,25 @@
+{
+  "name": "single-spa-filelist-webpack-plugin",
+  "version": "1.0.1",
+  "description": "single-spa-filelist-webpack-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylvke/single-spa-filelist-webpack-plugin"
+  },
+  "keywords": [
+    "single-spa",
+    "filelist",
+    "webpack",
+    "plugin"
+  ],
+  "author": "tvlvke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylvke/single-spa-filelist-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/tylvke/single-spa-filelist-webpack-plugin#readme"
+}

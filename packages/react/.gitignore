@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+coverage/
+dist
+build
+.DS_Store
+.idea/
+.cache
+yarn.lock
+package-lock.json
+.history

@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+coverage/
+dist
+build
+.DS_Store
+.idea/
+.cache
+.history
+lerna-debug.log
