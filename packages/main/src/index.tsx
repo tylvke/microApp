@@ -14,7 +14,13 @@ window.GlobalContext=GlobalContext;
 
 
 const App = () => {
+  // 特定中心路由通信
   const [title, setTitle] = useState('微前端');
+  // 通用事件通信
+  window.singleEvent.on('setTitle',(title)=>{
+    setTitle(title)
+  })
+
   return(
     <GlobalContext.Provider value={{title, setTitle}}>
       <div>

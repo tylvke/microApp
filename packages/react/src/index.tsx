@@ -46,9 +46,6 @@ export async function bootstrap() {
 }
 
 export async function mount() {
-  window.singleEvent.on('msg',(count)=>{
-    console.log(count)
-  })
   render(<App />, document.getElementById('micro_react'));
 }
 
