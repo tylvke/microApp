@@ -1,0 +1,45 @@
+class base {
+  $basedir = "$<path>"
+  $user = "$< user >"
+  $mod_ver = "$< version >"
+  $pkg_dir = "$<pkg_dir>"
+  $mod_name = "$< name >"
+  $tags = split("$<tag>", "_")
+  $servicegroup = $tags[2]
+  $env=$tags[3]
+  $prog_name = "scf-frontend"
+  $log_dir = "/home/work/log/${prog_name}"
+
+  $mod_proc_log = "${log_dir}/${prog_name}.log"
+  $to_email = ""
+  $mod_start = "sleep 1000h"
+  #$mod_stop = ""
+  #$mod_pid_cmd = ""
+  $run_dir = "${basedir}"
+  $mod_run_log = "${basedir}/run.log"
+
+}
+
+class production-lg inherits base {
+}
+
+class production-hh inherits base {
+}
+
+class aws-sgp inherits base {
+}
+
+class c3 inherits base {
+}
+class c4 inherits base {
+}
+class staging inherits base {
+}
+
+class preview inherits base {
+}
+
+class onebox inherits base {
+}
+
+class config inherits $<env> {}
