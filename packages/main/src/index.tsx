@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { render } from 'react-dom';
 import {
   HashRouter as Router,
@@ -8,26 +8,39 @@ import {
 import './registerWindow';
 import './single-spa-config';
 import AsyncComponent from './asyncComponent';
-render(
-  <div>
-    <h1>微前端</h1>
-    <h2>
-      <a href="/#/react">react</a>
-    </h2>
-    <h2>
-      <a href="/#/vue">vue</a>
-    </h2>
-    <h2>
-      <a href="/#/subapp">subapp</a>
-    </h2>
 
-    <Router>
+const GlobalContext = createContext({});
+window.GlobalContext=GlobalContext;
+
+
+const App = () => {
+  const [title, setTitle] = useState('微前端');
+  return(
+    <GlobalContext.Provider value={{title, setTitle}}>
       <div>
-        <Switch>
-          <Route exact={true} path="/subapp" component={AsyncComponent} />
-        </Switch>
+        <h1>{title}</h1>
+        <h2>
+          <a href="/#/react">react</a>
+        </h2>
+        <h2>
+          <a href="/#/vue">vue</a>
+        </h2>
+        <h2>
+          <a href="/#/subapp">subapp</a>
+        </h2>
+
+        <Router>
+          <div>
+            <Switch>
+              <Route exact={true} path="/subapp" component={AsyncComponent} />
+            </Switch>
+          </div>
+        </Router>
       </div>
-    </Router>
-  </div>,
+    </GlobalContext.Provider>
+  )
+}
+render(
+  <App />,
   document.getElementById('app')
 );
