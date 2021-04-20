@@ -8,7 +8,7 @@ window.singleEvent = new Emitter();
 // window = sandbox;
 
 console.log(window.__POWERED_BY_SINGLE_SPA__)
-function loadScript(url, charset) {
+export function loadScript(url, charset) {
   return new Promise((resolve,reject)=>{
     const head = document.getElementsByTagName('head')[0];
     var script = document.createElement("script");

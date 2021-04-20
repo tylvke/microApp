@@ -4,7 +4,7 @@ import './index.less';
 const Index = () => {
     window.singleEvent.emit('msg',11)
     return(
-        <h3>react index1</h3>
+        <h3>react index</h3>
     )
 }
 
