@@ -52,6 +52,8 @@ async function loadCss(appName,entrys){
 }
 // 加载js
 async function loadJs(appName,entrys){
+  // 避免重复加载
+  if(window[appName]) return window[appName];
   const list = [...entrys];
   while(list.length > 0){
     await loadScript(list.shift())
