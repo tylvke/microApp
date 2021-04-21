@@ -32,13 +32,13 @@ const App = () => {
           <a href="/#/vue">vue</a>
         </h2>
         <h2>
-          <a href="/#/subapp">subapp</a>
+          <a href="/#/subapp/money/index">subapp</a>
         </h2>
 
         <Router>
           <div>
             <Switch>
-              <Route exact={true} path="/subapp" component={AsyncComponent} />
+              <Route path="/subapp" component={AsyncComponent} />
             </Switch>
           </div>
         </Router>

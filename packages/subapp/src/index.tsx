@@ -9,13 +9,13 @@ import About from './page/About'
 const routes = () => {
   return (
     <Switch>
-        <Route exact={true} path="/subapp">
+        <Route exact={true} path="/subapp/money">
           <Index />
         </Route>
-        <Route path="/subapp/index">
+        <Route path="/subapp/money/index">
           <Index />
         </Route>
-        <Route path="/subapp/about">
+        <Route path="/subapp/money/about">
           <About />
         </Route>
     </Switch>
