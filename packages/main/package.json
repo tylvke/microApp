@@ -109,6 +109,7 @@
     "rc-select": "^10.0.0-alpha.27",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
     "sass-resources-loader": "^2.0.1",
     "shelljs": "^0.8.3",
     "single-spa": "^4.4.2",
